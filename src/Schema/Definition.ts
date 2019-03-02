@@ -21,6 +21,7 @@ export interface Definition {
     propertyOrder?: string[];
     properties?: DefinitionMap;
     defaultProperties?: string[];
+    nullable?: boolean;
 
     typeof?: "function";
 }

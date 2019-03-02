@@ -63,7 +63,8 @@ export class AnnotatedTypeFormatter implements SubTypeFormatter {
         };
 
         if (type.isNullable()) {
-            return makeNullable(def);
+            // return makeNullable(def);
+            def.nullable = true;
         }
 
         return  def;
